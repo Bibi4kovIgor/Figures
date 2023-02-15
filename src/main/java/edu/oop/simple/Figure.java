@@ -1,5 +1,9 @@
 package edu.oop.simple;
 
+/**
+ * Figure is an abstract class that implements Printable and Simple, and has two protected fields, point1 and point2, which
+ * are instances of the Point class, which is a static nested class of Figure.
+ */
 public abstract class Figure implements Printable, Simple {
 
     protected static class Point {
@@ -12,6 +16,7 @@ public abstract class Figure implements Printable, Simple {
         }
 
         public double getX() {
+            // Returning the value of the x field.
             return x;
         }
 
